@@ -1,0 +1,5 @@
+{
+    "math.local.": {
+        "http://schemas.example.com/api/math/v1": "/"
+    }
+}

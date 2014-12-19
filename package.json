@@ -1,12 +1,14 @@
 {
-  "name": "math-api",
+  "name": "mathd",
   "description": "API providing mathematical operations.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bixbyjs-examples/math-api.git"
+    "url": "git://github.com/bixbyjs-examples/mathd.git"
   },
   "dependencies": {
     "electrolyte": "0.0.6",
+    "bixby-common": "git://github.com/bixbyjs/bixby-common.git",
+    "bixby-sd": "git://github.com/bixbyjs/bixby-sd.git#feature/bootable",
     "bixby-express": "git://github.com/bixbyjs/bixby-express.git",
     "express": "^4.10.6",
     "bootable": "^0.2.4"
