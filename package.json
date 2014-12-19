@@ -1,0 +1,14 @@
+{
+  "name": "math-api",
+  "description": "API providing mathematical operations.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bixbyjs-examples/math-api.git"
+  },
+  "dependencies": {
+    "electrolyte": "0.0.6",
+    "bixby-express": "git://github.com/bixbyjs/bixby-express.git",
+    "express": "^4.10.6",
+    "bootable": "^0.2.4"
+  }
+}
