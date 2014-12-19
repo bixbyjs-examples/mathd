@@ -1,10 +1,18 @@
+var bodyParser = require('body-parser');
+
+
 exports = module.exports = function(logger) {
   
   function add(req, res, next) {
-    console.log('ADD STUFF');
+    logger.debug('adding operands: ' + req.body.operands.join(', '));
     
-    res.statusCode = 202;  // Accepted
-    res.end();
+    var operands = req.body.operands
+      , result = 0
+      , i, len;
+    for (i = 0, len = operands.length; i < len; ++i) {
+      result += operands[i];
+    }
+    res.send({ result: result });;
   }
 
   
@@ -13,9 +21,10 @@ exports = module.exports = function(logger) {
    *
    * CLI:
    *
-   *     $ curl -X POST -H "Content-Type: application/json" --data "{"operands":[1,2]}" http://127.0.0.1:8080/add
+   *     $ curl -X POST -H "Content-Type: application/json" --data "{\"operands\":[1,2]}" http://127.0.0.1:8080/add
    */
-  return [ add ];
+  return [ bodyParser.json(),
+           add ];
   
 }
 
