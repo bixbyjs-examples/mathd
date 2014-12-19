@@ -1,6 +1,6 @@
 {
   "name": "mathd",
-  "description": "API providing mathematical operations.",
+  "description": "Service providing mathematical operations.",
   "repository": {
     "type": "git",
     "url": "git://github.com/bixbyjs-examples/mathd.git"

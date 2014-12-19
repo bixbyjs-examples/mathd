@@ -1,3 +1,6 @@
+[server]
+port = 0
+
 [sd]
 url = "etcd://127.0.0.1:4001"
 

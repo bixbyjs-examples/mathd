@@ -1,1 +1,1 @@
-# math-api
+# mathd
